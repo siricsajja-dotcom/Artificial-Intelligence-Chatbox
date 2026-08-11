@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Chatbox</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="chat-container">
+
+        <header class="chat-header">
+            <h1>AI Assistant</h1>
+            <p>Ask me anything.</p>
+        </header>
+
+        <main id="chat-box" class="chat-box">
+
+            <div class="message ai-message">
+                <div class="message-content">
+                    Hello! How can I help you today?
+                </div>
+            </div>
+
+        </main>
+
+        <div class="typing" id="typing">
+            AI is thinking...
+        </div>
+
+        <form id="chat-form" class="chat-input-container">
+
+            <input
+                type="text"
+                id="user-input"
+                placeholder="Type your message..."
+                autocomplete="off"
+                required
+            >
+
+            <button type="submit" id="send-button">
+                Send
+            </button>
+
+        </form>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
